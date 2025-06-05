@@ -1,0 +1,38 @@
+.navigation {
+    --navigation-bar-height: 72px;
+
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-inverted);
+    height: var(--navigation-bar-height);
+    width: 100%;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        font-weight: 600;
+    }
+}
+
+.cta {
+    border: 1px solid yellow;
+    padding: 4px;
+
+    &-wrapper {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.links {
+    display: flex;
+    gap: 16px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.logo {
+    flex: 1;
+}
