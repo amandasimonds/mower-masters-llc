@@ -5,7 +5,7 @@ import "./navigation.scss";
 
 export default function Navigation() {
 
-  const [navmenuOpen, setNavMenuOpen] = React.useState(true);
+  const [navmenuOpen, setNavMenuOpen] = React.useState(false);
 
   function toggleNavMenu() {
     setNavMenuOpen(!navmenuOpen);
