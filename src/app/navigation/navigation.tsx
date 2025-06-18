@@ -13,7 +13,13 @@ export default function Navigation() {
 
   return (
     <div className="navigation">
-      <div className="logo">Logo</div>
+      <a href="#home" className="logo">
+        <i className="material-icons">home</i>
+        <div className="logo__text">
+          <span>Mower</span>
+          <span>Masters</span>
+        </div>
+      </a>
       <div className="cta-wrapper">
         <a href="tel:8654078914" className="cta">Call Now 865-407-8914</a>
       </div>
@@ -22,9 +28,9 @@ export default function Navigation() {
       </div>
       <div className={`links ${navmenuOpen ? 'links--show' : ''}`} >
         <button className="icon-button close" onClick={toggleNavMenu}><i className="material-icons">close</i></button>
-        <a href="">ABOUT</a>
-        <a href="">SERVICES & PRICING</a>
-        <a href="">CONTACT</a>
+        <a href="#home">ABOUT</a>
+        <a href="#services">SERVICES & PRICING</a>
+        <a href="#home">CONTACT</a>
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+@use '../../styles/variables.scss' as *;
+
 .services {
     &__header {
         display: flex;
@@ -8,22 +10,76 @@
     &__content {
         background-color: var(--color-bg-light);
         padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
 
         &__intro {
             display: flex;
+            gap: 16px;
+
+            @media screen and (max-width: $mobile-screen-width-max) {
+                flex-direction: column;
+                gap: 12px;
+            }
 
             .section {
                 flex: 1;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
+                &__details {
+                    text-align: center;
+                }
+
+                .divider {
+                    width: 16px;
+                    height: 1px;
+                    background-color: var(--color-neutral);
+                    margin-block: 8px;
+
+                    @media screen and (max-width: $mobile-screen-width-max) {
+                        display: none;
+                    }
+                }
             }
         }
 
         &__items {
-            .item {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .service-item {
                 background-color: var(--color-bg);
                 box-shadow: var(--box-shadow);
+                display: flex;
+                padding: 24px 16px;
+                gap: 48px;
+                justify-content: center;
+
+                
+            @media screen and (max-width: $mobile-screen-width-max) {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+                &__type {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    align-items: center;
+                    min-width: 33%;
+
+                    h5 {
+                        color: var(--color-primary);
+                    }
+                }
+
+                &__description {
+                    width: 100%;
+                }
             }
         }
     }

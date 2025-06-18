@@ -13,7 +13,7 @@ export default function Home() {
     link.rel = "stylesheet";
     document.head.appendChild(link);
   }, []);
-  
+
   return (
     <div className={styles.page}>
       <Navigation></Navigation>
@@ -22,7 +22,11 @@ export default function Home() {
         <Services></Services>
       </main>
       <footer className={styles.footer}>
-
+        <span className="subtitle">Mower Masters LLC</span>
+        <span>
+          Copyright &copy; 2025 Mower Masters LLC - All Rights Reserved.
+        </span>
+        <span>Website by <a href="amandaxandra.netlify.app">Amanda Simonds</a></span>
       </footer>
     </div>
   );
