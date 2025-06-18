@@ -1,9 +1,9 @@
 'use client'
 
 import styles from "./page.module.scss";
-import Navigation from "./navigation/navigation";
-import Header from "./sections/header/header";
-import Services from "./sections/services/services";
+import Navigation from "../navigation/navigation";
+import Header from "../sections/header/header";
+import Services from "../sections/services/services";
 import { useEffect } from "react";
 
 export default function Home() {
