@@ -1,0 +1,35 @@
+@use './styles/variables.scss' as *;
+
+.page {
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+
+  @media screen and (max-width: $mobile-screen-width-max) {
+    padding: 16px 8px;
+  }
+}
+
+.footer {
+  background-color: var(--color-primary-dark);
+  padding: 24px;
+  color: var(--color-neutral-light);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+  .subtitle {
+    color: var(--color-text-inverted);
+  }
+}

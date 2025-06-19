@@ -1,9 +1,9 @@
 'use client'
 
 import styles from "./page.module.scss";
-import Navigation from "../navigation/navigation";
-import Header from "../sections/header/header";
-import Services from "../sections/services/services";
+import Navigation from "./layout/navigation/navigation";
+import Header from "./layout/sections/header/header";
+import Services from "./layout/sections/services/services";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
         <span>
           Copyright &copy; 2025 Mower Masters LLC - All Rights Reserved.
         </span>
-        <span>Website by <a href="amandaxandra.netlify.app">Amanda Simonds</a></span>
+        <span>Website by <a href="http://amandaxandra.netlify.app">Amanda Simonds</a></span>
       </footer>
     </div>
   );

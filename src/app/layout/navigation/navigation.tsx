@@ -2,8 +2,16 @@
 
 import React from "react";
 import "./navigation.scss";
+import Scrim from "@/app/components/scrim/scrim";
 
 export default function Navigation() {
+
+  const navLinks = [
+    { link: "#home", label: "ABOUT" },
+    { link: "#services", label: "SERVICES" },
+    { link: "#services", label: "PRICING" },
+    { link: "#home", label: "CONTACT" }
+  ];
 
   const [navmenuOpen, setNavMenuOpen] = React.useState(false);
 
@@ -13,6 +21,7 @@ export default function Navigation() {
 
   return (
     <div className="navigation">
+      <Scrim onClick={toggleNavMenu} isShowing={navmenuOpen}></Scrim>
       <a href="#home" className="logo">
         <i className="material-icons">home</i>
         <div className="logo__text">
@@ -28,9 +37,11 @@ export default function Navigation() {
       </div>
       <div className={`links ${navmenuOpen ? 'links--show' : ''}`} >
         <button className="icon-button close" onClick={toggleNavMenu}><i className="material-icons">close</i></button>
-        <a href="#home">ABOUT</a>
-        <a href="#services">SERVICES & PRICING</a>
-        <a href="#home">CONTACT</a>
+        {navLinks.map(link => (
+          <a key={link.label} href={link.link} onClick={toggleNavMenu}>
+            {link.label}
+          </a>
+        ))}
       </div>
     </div>
   );
