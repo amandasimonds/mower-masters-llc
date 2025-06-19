@@ -5,6 +5,8 @@ import Navigation from "./layout/navigation/navigation";
 import Header from "./layout/sections/header/header";
 import Services from "./layout/sections/services/services";
 import { useEffect } from "react";
+import About from "./layout/sections/about/about";
+import Contact from "./layout/sections/contact/contact";
 
 export default function Home() {
   useEffect(() => {
@@ -20,6 +22,8 @@ export default function Home() {
       <main className={styles.main}>
         <Header></Header>
         <Services></Services>
+        <About></About>
+        <Contact></Contact>
       </main>
       <footer className={styles.footer}>
         <span className="subtitle">Mower Masters LLC</span>
