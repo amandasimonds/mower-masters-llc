@@ -8,9 +8,16 @@ const notoSans = Noto_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Mower Masters LLC",
-  description: "Mower Masters LLC Website",
+  title: "Mower Masters Small Engine Repair Knoxville TN Lawn Mower Service",
+  description: "Mower Masters Small Engine Repair Knoxville TN Lawn Mower Service",
   keywords: ["small engine repair",
+    "engine",
+    "knoxville",
+    "repair",
+    "lawn mower",
+    "lawn",
+    "local",
+    "small engine",
     "lawn mower repair",
     "mower service",
     "yard equipment repair",

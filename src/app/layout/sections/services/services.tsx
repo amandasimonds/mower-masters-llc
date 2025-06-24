@@ -62,7 +62,7 @@ export default function Services() {
     return (
         <div className="services" id="services">
             <div className="services__header">
-                <h3>SERVICES</h3>
+                <h2>SERVICES</h2>
             </div>
             <div className="services__content">
                 <div className="services__content__intro">
@@ -96,6 +96,9 @@ export default function Services() {
                                     </ul>
                                 </div>
                             )}
+                            <div className="see-pricing">
+                                <button className="link"><a href="#pricing">SEE PRICING</a></button>
+                            </div>
                         </div>
                     ))}
                 </div>

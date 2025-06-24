@@ -8,7 +8,7 @@ export default function Navigation() {
 
   const navLinks = [
     { link: "services", label: "SERVICES" },
-    // { link: "services", label: "PRICING" },
+    { link: "pricing", label: "PRICING" },
     { link: "about", label: "ABOUT" },
     { link: "contact", label: "CONTACT" }
   ];

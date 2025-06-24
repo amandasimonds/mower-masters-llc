@@ -6,12 +6,12 @@ export default function About() {
     return (
         <div className="about" id="about">
             <div className="about__header">
-                <h3>ABOUT</h3>
+                <h2>ABOUT</h2>
             </div>
             <div className="about__content">
                 <div className="about__text">
                     <p>
-                        Mower Masters is a small engine repair service that specializes in providing convenient, on-site repairs for lawn mowers, lawn tractors, and snow blowers. We understand the hassle of transporting your equipment to a repair shop, which is why we come to you, whether at home or your business.
+                        We are a small engine repair service based in Knoxville, TN, providing convenient, on-site repairs for lawn mowers, lawn tractors, and snow blowers. We understand the hassle of transporting your equipment to a repair shop, which is why we come to you, whether at home or your business.
                     </p>
                     <p>
                         Our team of experienced technicians is dedicated to delivering high-quality service with a focus on customer satisfaction. We pride ourselves on our expertise in small engine repair and our commitment to making the process as easy as possible for you.

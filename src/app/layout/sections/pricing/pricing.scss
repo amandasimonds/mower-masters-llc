@@ -1,0 +1,137 @@
+@use '../../../styles/variables.scss' as *;
+
+.pricing {
+    padding-bottom: 16px;
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        padding: 24px 24px 12px;
+    }
+
+    &__content {
+        padding: 0 15px 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .pricing-item {
+                display: flex;
+                padding: 24px 16px;
+                gap: 48px;
+                justify-content: center;
+
+                @media screen and (max-width: $mobile-screen-width-max) {
+                    flex-direction: column;
+                    gap: 12px;
+                }
+
+                &__details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    width: 50%;
+
+                    @media screen and (max-width: $mobile-screen-width-max) {
+                        align-items: center;
+                        width: 100%;
+                    }
+                }
+
+                &__type {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    align-items: center;
+
+                    h5 {
+                        color: var(--color-primary);
+                        max-width: 400px;
+                        text-align: center;
+                    }
+
+                    img {
+                        width: 200px;
+                        height: auto;
+                    }
+
+                    @media screen and (min-width: $tablet-screen-width-min) {
+                        align-items: flex-end;
+                        width: 50%;
+
+                        h5 {
+                            text-align: right;
+                        }
+                    }
+                }
+
+                &__description {
+                    display: flex;
+                    margin: auto 0;
+                    width: 100%;
+
+                    li {
+                        margin-left: 0;
+                    }
+
+                    .rate {
+                        display: flex;
+                        gap: 8px;
+
+                        &-type {
+                            font-weight: var(--font-weight-semibold);
+                            color: var(--color-text-secondary);
+                            flex-wrap: nowrap;
+
+                            @media screen and (max-width: $mobile-screen-width-max) {
+                                width: 50%;
+                                text-align: right;
+                            }
+                        }
+
+                        &-price {
+                            @media screen and (max-width: $mobile-screen-width-max) {
+                                width: 50%;
+                            }
+                        }
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        @media screen and (max-width: $mobile-screen-width-max) {
+                            align-items: center;
+                        }
+                    }
+
+                    @media screen and (max-width: $mobile-screen-width-max) {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        &__notes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            text-align: center;
+        }
+    }
+
+    .divider {
+        width: 70%;
+        height: 2px;
+        background-color: var(--color-neutral);
+        margin-block: 8px;
+        margin: auto;
+    }
+}

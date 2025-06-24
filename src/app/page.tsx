@@ -7,6 +7,7 @@ import Services from "./layout/sections/services/services";
 import { useEffect } from "react";
 import About from "./layout/sections/about/about";
 import Contact from "./layout/sections/contact/contact";
+import Pricing from "./layout/sections/pricing/pricing";
 
 export default function Home() {
   useEffect(() => {
@@ -22,6 +23,7 @@ export default function Home() {
       <main className={styles.main}>
         <Header></Header>
         <Services></Services>
+        <Pricing></Pricing>
         <About></About>
         <Contact></Contact>
       </main>
