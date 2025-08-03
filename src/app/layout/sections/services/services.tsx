@@ -1,3 +1,4 @@
+import { scrollToSection } from "@/app/utils/utils";
 import "./services.scss";
 import React from "react";
 
@@ -6,6 +7,7 @@ export default function Services() {
     type ServiceItem = {
         name: string;
         image: string;
+        keywords: string;
         services: string[];
     };
 
@@ -13,6 +15,7 @@ export default function Services() {
         {
             name: "Lawn Mowers",
             image: "/service-lawnmower.png",
+            keywords: "mobile small engine repair lawn mower service knoxville tn",
             services: [
                 "Inspect and replace spark plug(s)",
                 "Oil change & lube",
@@ -29,6 +32,7 @@ export default function Services() {
         {
             name: "Lawn Tractors",
             image: "/service-tractor.png",
+            keywords: "mobile small engine repair lawn tractor riding mower service knoxville tn",
             services: [
                 "Inspect and replace spark plug(s)",
                 "Oil change & lube",
@@ -42,6 +46,7 @@ export default function Services() {
         {
             name: "Snow Blowers",
             image: "/service-snowblower.png",
+            keywords: "mobile small engine repair snow blower service knoxville tn",
             services: [
                 "Inspect and replace spark plug(s)",
                 "Check engine & gaskets for leaks, cracks, signs of overheating",
@@ -85,7 +90,7 @@ export default function Services() {
                         <div className="service-item" key={item.name || idx}>
                             <div className="service-item__type">
                                 <h5>{item.name}</h5>
-                                <img src={item.image} alt={item.name} />
+                                <img src={item.image} alt={item.keywords} />
                             </div>
                             {item.services && (
                                 <div className="service-item__description">
@@ -97,7 +102,7 @@ export default function Services() {
                                 </div>
                             )}
                             <div className="see-pricing">
-                                <button className="link"><a href="#pricing">SEE PRICING</a></button>
+                                <button className="link"><a onClick={() => scrollToSection('pricing')}>SEE PRICING</a></button>
                             </div>
                         </div>
                     ))}

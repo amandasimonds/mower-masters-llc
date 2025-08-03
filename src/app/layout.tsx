@@ -17,6 +17,8 @@ export const metadata: Metadata = {
     "lawn mower",
     "lawn",
     "local",
+    "mobile",
+    "mobile service",
     "small engine",
     "lawn mower repair",
     "mower service",
