@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import About from "./layout/sections/about/about";
 import Contact from "./layout/sections/contact/contact";
 import Pricing from "./layout/sections/pricing/pricing";
+import Reviews from "./layout/sections/reviews/reviews";
 
 export default function Home() {
   useEffect(() => {
@@ -24,7 +25,10 @@ export default function Home() {
         <Header></Header>
         <Services></Services>
         <Pricing></Pricing>
+        <div className={styles.divider}></div>
         <About></About>
+        <Reviews></Reviews>
+        <div className={styles.divider}></div>
         <Contact></Contact>
       </main>
       <footer className={styles.footer}>
@@ -32,7 +36,7 @@ export default function Home() {
         <span>
           Copyright &copy; 2025 Mower Masters LLC - All Rights Reserved.
         </span>
-        <span>Website by <a href="http://amandaxandra.netlify.app">Amanda Simonds</a></span>
+        <span>Website by <a href="http://amandaxandra.netlify.app">Amanda Simonds</a> | Graphics by <a href="https://www.ashleyashleyashley.com/">Ashley Abbott</a></span>
       </footer>
     </div>
   );

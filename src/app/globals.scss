@@ -59,6 +59,13 @@ a {
   }
 }
 
+.icon-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-primary);
+}
+
 h1 {
   font-size: 62px;
   line-height: 72px;

@@ -1,0 +1,41 @@
+@use '../../../styles/variables.scss' as *;
+
+.reviews {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__header {
+        padding: 24px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        .review-item {
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+            width: 100%;
+            max-width: 600px;
+            background-color: var(--color-bg-light);
+            border-radius: 4px;
+            text-align: center;
+            gap: 8px;
+
+            &__text {
+                font-style: italic;
+                color: var(--color-text-secondary);
+            }
+
+            &__reviewer {
+                font-weight: bold;
+                color: var(--color-primary);
+            }
+        }
+    }
+}

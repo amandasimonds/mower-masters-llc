@@ -3,6 +3,7 @@
 import React from "react";
 import "./navigation.scss";
 import Scrim from "@/app/components/scrim/scrim";
+import { scrollToSection } from "@/app/utils/utils";
 
 export default function Navigation() {
 
@@ -10,7 +11,8 @@ export default function Navigation() {
     { link: "services", label: "SERVICES" },
     { link: "pricing", label: "PRICING" },
     { link: "about", label: "ABOUT" },
-    { link: "contact", label: "CONTACT" }
+    { link: "contact", label: "CONTACT" },
+    { link: "reviews", label: "REVIEWS" }
   ];
 
   const [navmenuOpen, setNavMenuOpen] = React.useState(false);
@@ -21,15 +23,7 @@ export default function Navigation() {
 
   function handleNavLinkClick(link: string) {
     setNavMenuOpen(false);
-    handleScrollToSection(link, -60);
-  }
-
-  function handleScrollToSection(id: string, offset = 0) {
-    const section = document.getElementById(id);
-    if (section) {
-      const y = section.getBoundingClientRect().top + window.pageYOffset + offset;
-      window.scrollTo({ top: y, behavior: "smooth" });
-    }
+    scrollToSection(link);
   }
 
   return (
