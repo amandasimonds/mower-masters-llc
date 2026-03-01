@@ -82,6 +82,7 @@
                     .rate {
                         display: flex;
                         gap: 8px;
+                        width: 250px;
 
                         &-type {
                             font-weight: var(--font-weight-semibold);
@@ -124,6 +125,30 @@
             align-items: center;
             gap: 4px;
             text-align: center;
+        }
+    }
+
+    &__diagnose-hourly {
+        background-color: var(--color-bg-light);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 32px;
+        margin-block: 12px;
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: 650px;
+        }
+
+        @media screen and (min-width: $tablet-screen-width-min) {
+            text-align: center;
+
+            .section {
+                margin: auto;
+            }
         }
     }
 }

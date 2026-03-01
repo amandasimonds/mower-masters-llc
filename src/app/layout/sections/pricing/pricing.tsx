@@ -23,8 +23,8 @@ export default function Pricing() {
             image: "/service-lawnmower.png",
             rates: [
                 { type: "Tune-up", price: "$119 or $129*" },
-                { type: "Repair", price: "$119 or $129*", note: "cost of parts is additional" },
-                { type: "Tune-up & repair", price: "$159 or $169", note: "depending on location" }
+                { type: "Repair", price: "$90 per hour", note: "depending on location" },
+                { type: "Tune-up & repair", price: "Discount $60 for first hour of repair", note: "depending on location" }
             ]
         },
         {
@@ -32,8 +32,8 @@ export default function Pricing() {
             image: "/service-tractor.png",
             rates: [
                 { type: "Tune-up", price: "$209-$269** or $219*-$279**", note: "outside normal service area" },
-                { type: "Repair", price: "$209-$269** or $219*-$279**", note: "outside normal service area, cost of parts is additional" },
-                { type: "Tune-up & repair", price: "add $60 to base price above" }
+                { type: "Repair", price: "$90 per hour", note: "depending on location" },
+                { type: "Tune-up & repair", price: "Discount $60 for first hour of repair" }
             ]
         },
         {
@@ -41,8 +41,8 @@ export default function Pricing() {
             image: "/service-snowblower.png",
             rates: [
                 { type: "Tune-up", price: "$170 or $180*" },
-                { type: "Repair", price: "$170 or $180*" },
-                { type: "Tune-up & repair", price: "add $40 to base price above" }
+                { type: "Repair", price: "$90 per hour", note: "depending on location" },
+                { type: "Tune-up & repair", price: "Discount $60 for first hour of repair" }
             ]
         }
     ]
@@ -51,6 +51,16 @@ export default function Pricing() {
         <div className="pricing" id="pricing">
             <div className="pricing__header">
                 <h2>PRICING</h2>
+            </div>
+            <div className="pricing__diagnose-hourly">
+                <div className="section">
+                    <h5>Diagnose & Estimate: $90 - $130</h5>
+                    <p>We inspect your equipment to determine if it can be fixed and what the estimated cost would be. The diagnosis fee applies regardless of outcome (whether or not you proceed with repairs, or if repairs are not cost-effective).</p>
+                </div>
+                <div className="section">
+                    <h5>Labor: $90/hour</h5>
+                    <p>Labor is charged for time spent completing repairs and equipment overhauls.</p>
+                </div>
             </div>
             <div className="pricing__content">
                 <div className="pricing__content__items">

@@ -11,7 +11,7 @@ export default function Header() {
             <div className="header__text">
                 <h1 className="visually-hidden">Mower Masters small engine repair in Knoxville Tennessee
                 </h1>
-                <span>We are a mobile service that works with all types of small engines. We will come to your HOME or BUSINESS! No more shoving your mower, lawn tractor, or snow blower into the trunk. Just give us a call and we will come to you!</span>
+                <span>We are a mobile service that works on lawn mowers and other small engines and equipment — right at your home or business. No hauling, no hassle. Just call us, and we&apos;ll come to you.</span>
                 <button><a href="tel:8654078914">Call Now 865-407-8914</a></button>
             </div>
         </div>

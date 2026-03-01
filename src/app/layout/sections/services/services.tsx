@@ -78,11 +78,11 @@ export default function Services() {
                     </div>
                     <div className="section"><h4>Maintenance</h4>
                         <span className="divider"></span>
-                        <span className="section__details">Maintenance is something you should do annually regardless of how your machine is running. This will ensure proper performance throughout the season.</span>
+                        <span className="section__details">We recommend annual maintenance to prevent issues and keep your equipment running smoothly. We inspect, clean, and service parts to ensure peak performance all season.</span>
                     </div>
                     <div className="section"><h4>Repair</h4>
                         <span className="divider"></span>
-                        <span className="section__details">If your machine is not performing or running properly then it probably needs some type of repair.</span>
+                        <span className="section__details">Equipment having issues? We&apos;ll diagnose the problem, and repair or replace parts to get it running like new.</span>
                     </div>
                 </div>
                 <div className="services__content__items">
@@ -106,6 +106,18 @@ export default function Services() {
                             </div>
                         </div>
                     ))}
+
+                    <div className="service-item">
+                        <h5>Other small engines and equipment</h5>
+                        <div className="service-item__description other-engines">
+                            <ul>
+                                <li>Generators</li>
+                                <li>Pressure washers</li>
+                                <li>Go-karts</li>
+                            </ul>
+                            <span><b>Note: We do not work on two-stroke engines.</b></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
